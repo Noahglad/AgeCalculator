@@ -1,0 +1,95 @@
+@import url(./assets/fonts/Poppins-Bold.ttf);
+body {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: poppins;
+  background: hsl(0, 0%, 86%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom-right-radius: 5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 475px) {
+  .container {
+    width: 90%;
+  }
+  .container button {
+    position: absolute;
+    top: 14rem;
+  }
+  .container .outputs {
+    margin-top: 3rem;
+  }
+  .container .outputs h1 {
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+}
+.container .input-flex {
+  display: flex;
+  gap: 2rem;
+}
+.container .input-container {
+  display: flex;
+  flex-direction: column;
+}
+.container .input-container input {
+  width: 60px;
+  border: 2px solid hsl(0, 0%, 86%);
+}
+.container .input-container input:focus {
+  outline: none;
+}
+
+button {
+  background: hsl(259, 100%, 65%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  right: 4rem;
+  top: 10rem;
+  cursor: pointer;
+}
+button:hover {
+  background: hsl(0, 100%, 67%);
+}
+button img {
+  width: 80%;
+  height: 50%;
+}
+
+.errors {
+  color: hsl(0, 100%, 67%);
+  font-size: 0.4rem;
+}
+
+h1 span {
+  color: hsl(259, 100%, 65%);
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(0, 100%, 67%);
+}/*# sourceMappingURL=style.css.map */
